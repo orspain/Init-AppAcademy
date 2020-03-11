@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        @media screen and (max-height: 500px) {
+          .short {background-color: yellow;}
+        }
+        @media screen and (min-height: 500px) {
+           .long {background-color: orange;}
+        }
+        @media print {
+            .short { font-size: 24pt;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="short">This is a short screen.</div>
+    <div class="long">This is a long screen.</div>
+
+</body>
+</html>
