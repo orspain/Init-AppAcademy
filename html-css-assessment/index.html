@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Academy HTML/CSS Assessment</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Your markup goes here. -->
+  <div class="form">
+    <form action="/pets" method="post">
+      <fieldset>
+
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="pet_name">
+        </div>
+
+        <div>
+          <label for="type">Type</label>
+          <select id="type" name="pet_type">
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+            <option value="Hamster">Hamster</option>
+            <option value="Other">Other</option>
+            <option value="Zebra">Zebra</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bio">Biography</label>
+          <textarea name="pet_bio" id="bio"></textarea>
+        </div>
+
+        <div>
+          <label for="email">Owner's Email</label>
+          <input id="owner-email" name="pet_owner_email">
+        </div>
+
+        <div>
+          <button type="submit" id="new-pet-submit-button">Create New Pet</button>
+        </div>
+
+        <div>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="image">
+      <img src="images/desert.jpg" alt="Desert">
+    </div>
+
+    <div class="container">
+
+      <div class="avatar">
+        <img src="images/person-avatar.jpg" alt="Avatar">
+      </div>
+
+      <div class="title">
+        <p>Title goes here</p>
+      </div>
+
+      <div class="secondary_text">
+        <p>Secondary text</p>
+      </div>
+
+      <div class="body_text">
+        <p>Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/* Your styles go in here. */
+@media screen and (min-width: 600px) {
+    form {justify-self: start;
+          max-width: 600px;
+          display: grid;
+          grid-template-columns: 20% 1fr%;
+          grid-template-rows: repeat(6, 20%);
+          grid-gap: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+    }
+
+@media screen and (max-width: 599px) {
+
+    /* remove the width from the form so that
+    it is just as wide as the screen. */
+    form {
+        width: auto;
+    }
+
+    /* Turn labels into blocks so they can stretch
+    across the entire screen. Also, get rid of
+    the margin so that the text is left aligned.
+    Finally, set the width to auto so that it
+    isn't stuck at 90px. */
+    label {
+        display: block;
+        margin: 0;
+        text-align: left;
+        width: auto;
+    }
+
+    /* Let the inputs, textareas, and selects span
+    the entire screen, too. */
+    input,
+    select,
+    textarea {
+        width: 100%;
+        }
+    }
+
+    * { box-sizing: border-box; }
+
+    /* Every div after the first div in the form. */
+    form div + div {
+        margin-top: 1em;
+    }
+
+    input,
+    textarea {
+        /* You must explicitly override the fonts in textareas and inputs. */
+        font-family: Arial, Helvetica, sans-serif;
+
+        /* Match form field borders */
+        border: 1px solid #999;
+    }
+
+    input:focus,
+    textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+    }
+
+    textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+
+        /* Provide space to type some text */
+        height: 5em;
+    }
+
+    select {
+        /* You must explicitly override the font in a select. */
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    label[for="menu"] {
+          grid-area: 1 / 1 / 1 / 2;
+    }
+
+    label[for="bio"] {
+          grid-area: 2 / 1 / 2 / 2;
+    }
+
+    label[for="name"]{
+          grid-area: 3 / 1 / 3 / 2;
+    }
+
+    label [for="email"]{
+          grid-area: 4 / 1 / 4 / 2;
+    }
+
+    .grid5 {
+          grid-area: 5 / 1 / 5 / 2;
+    }
+
+    .grid6 {
+          grid-area: 6 / 1 / 6 / 2;
+    }
+
+    select {
+          grid-area: 1 / 2 / 1 / 3;
+    }
+
+    textarea {
+          grid-area: 2 / 2 / 2 / 3;
+    }
+
+    #name {
+          grid-area: 3 / 2 / 3 / 3;
+    }
+
+    #email {
+          grid-area: 4 / 2 / 4 / 3;
+    }
+
+    .card {
+        /* Set card width */
+        width: 344px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* On mouse-over, add a shadow */
+    .card:hover {
+        box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .image {
+        height: 194px;
+    }
+
+    .container {
+        padding: 2px 16px;
+      }
+
+    .avatar {
+        size: 40px;
+        margin-left: 1em;
+    }
+
+    .title {
+        color: #000;
+        size: 22px;
+    }
+
+    .secondary_text {
+        color: #232F34;
+        size: 11px;
+    }
+
+    .body_text {
+        color: #232F34;
+        size: 11px;
+        padding: 16px;
+    }
+
+
